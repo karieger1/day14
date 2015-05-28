@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link type="text/css" rel="stylesheet" href="styles/style.css"/>
+
 	<title></title>
 </head>
+
 <body>
-<button id="button">Submit</button>
+
+	<section class="top">
+		<img id="logo" src="https://github.com/TIY-Austin-Front-End-Engineering/jquery-login/blob/master/treemoLabs-logo.png?raw=true" width="308" height="100">
+	</section>
+
+	<section class="bottom">
+
+		<form>
+
+			<label >Username<input id="user" type="text"></label>
+			<div class="error" id="user-error"></div>
+			<label >Password <input id="password" type="password"></label>
+			<div class="error" id="pass-error"></div>
+			<button type="submit">Sign In</button>
+
+		</form>
+
+	</section>
+
 
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/main.js"></script>
