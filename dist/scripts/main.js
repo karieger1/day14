@@ -34,22 +34,25 @@ $(document).on("ready", function(){
 
 
 	var $targetSection = $(window.location.hash);
-	if(!$targetSection.length) {
-		$targetSection = $("main section").eq(0);
-	}
+	 if(!$targetSection.length) {
+	 	$targetSection = $("main section").eq(0);
+	 }
 	$targetSection.show();
 
 	$('nav a[href="#' +$targetSection.attr('id')+'"]').addClass('active');
 
-	$('nav').on('click', function(e) {
-		var $target = $(e.target);
-		var targetName = $target.attr('href');
+	 $('nav').on('click', function(e) {
+	 	var $target = $(e.target);
+	 	var targetName = $target.attr('href');
 		$('main section').hide();
-		$(targetName).show();
+	 	$(targetName).show();
 
 
-		$('nav a').removeClass('active');
-		$target.addClass('active');
+	 	$('nav a').removeClass('active');
+	 	$target.addClass('active');
 
-	});
+	 });
+
+
+
 });
