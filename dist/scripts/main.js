@@ -1,16 +1,18 @@
 
-	var $button = $("button");
+$(document).ready(function () {
+	var $button = $('#button')
 
-	$button.on("click",function(){
+	$button.on('click', loadButton);
 
-	    $(this).attr('disabled');
-	 		$button.html("Loading...")
-	 		$button.css("color", "lightgrey");
+	function loadButton(e) {
+		$button.html('Loading...');
+		$button.css('color', 'grey');
 
-	 	setTimeout(button, 4000);
-	 });
+		setTimeout(submitButton, 4000);
+	}
+	function submitButton(e) {
+		$button.html('Submit');
+		$button.css('color', 'black');
+	}
 
-	 function changeBack(e) {
-		$btn.html('Submit');
-		$btn.css('color', '#black');
-}
+});
