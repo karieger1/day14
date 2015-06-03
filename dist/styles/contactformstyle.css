@@ -1,0 +1,32 @@
+body {
+	background-image: url("https://github.com/TIY-Austin-Front-End-Engineering/jquery-contact-form/blob/master/bg.jpg?raw=true")
+}
+h2 {
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+#formBox {
+	margin:10em;
+
+}
+form {
+	background-color: white;
+	
+}
+
+.infoStuff {
+	display: block;
+	margin: 5px;
+	color: grey;
+	width:14em;
+	vertical-align: middle;
+}
+#message {
+	display: block;
+	margin: 0 auto;
+	color: grey;
+	width: 14em;
+	height: 10em;
+	margin:5px;
+}
